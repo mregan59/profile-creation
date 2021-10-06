@@ -37,7 +37,6 @@ import { Platform } from 'react-native'
 import { enableScreens } from "react-native-screens"
 import Reactotron from 'reactotron-react-native'
 import { isEmpty } from 'lodash'
-import { APIProvider } from './services/api/api-provider'
 
 enableScreens()
 
@@ -87,20 +86,18 @@ function App() {
 
     // otherwise, we're ready to render the app
     return (
-        <APIProvider>
-            <RootStoreProvider value={rootStore}>
-                <IconRegistry icons={EvaIconsPack} />
-                <ApplicationProvider customMapping={customMapping} {...eva} theme={eva.dark}>
-                    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-                        <RootNavigator
-                            ref={navigationRef}
-                            initialState={initialNavigationState}
-                            onStateChange={onNavigationStateChange}
-                        />
-                    </SafeAreaProvider>
-                </ApplicationProvider>
-            </RootStoreProvider>
-        </APIProvider>
+        <RootStoreProvider value={rootStore}>
+            <IconRegistry icons={EvaIconsPack} />
+            <ApplicationProvider customMapping={customMapping} {...eva} theme={eva.dark}>
+                <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+                    <RootNavigator
+                        ref={navigationRef}
+                        initialState={initialNavigationState}
+                        onStateChange={onNavigationStateChange}
+                    />
+                </SafeAreaProvider>
+            </ApplicationProvider>
+        </RootStoreProvider>
     )
 }
 
