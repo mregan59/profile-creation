@@ -3,6 +3,7 @@ import { RootStoreModel, RootStore } from "./root-store"
 import { Environment } from "../environment"
 import * as storage from "../../utils/storage"
 import Reactotron from "reactotron-react-native"
+import { AppList } from "../app"
 /**
  * The key we'll be saving our state as within async storage.
  */
@@ -16,55 +17,56 @@ const ROOT_STATE_STORAGE_KEY = "root"
  * like events between models.
  */
 export async function createEnvironment() {
-  const env = new Environment()
-  await env.setup()
-  return env
+    const env = new Environment()
+    await env.setup()
+    return env
 }
 
 /**
  * Setup the root state.
  */
 export async function setupRootStore() {
-  let rootStore: RootStore
-  let data: any
+    let rootStore: RootStore
+    let data: any
 
-  // prepare the environment that will be associated with the RootStore.
-  const env = await createEnvironment()
-  try {
-    // load data from storage
-    data = (await storage.load(ROOT_STATE_STORAGE_KEY)) || {}
-    rootStore = RootStoreModel.create(data, env)
-  } catch (e) {
-    // if there's any problems loading, then let's at least fallback to an empty state
-    // instead of crashing.
-    rootStore = RootStoreModel.create({}, env)
+    // prepare the environment that will be associated with the RootStore.
+    const env = await createEnvironment()
+    try {
+        // load data from storage
+        data = (await storage.load(ROOT_STATE_STORAGE_KEY)) || {}
+        rootStore = RootStoreModel.create(data, env)
+    } catch (e) {
+        // if there's any problems loading, then let's at least fallback to an empty state
+        // instead of crashing.
+        const appList = AppList.create()
+        rootStore = RootStoreModel.create({ appList }, env)
 
-    // but please inform us what happened
-    __DEV__ && console.tron.error(e.message, null)
-  }
+        // but please inform us what happened
+        __DEV__ && console.tron.error(e.message, null)
+    }
 
-  // reactotron logging
-  if (__DEV__) {
-    env.reactotron.setRootStore(rootStore, data)
-  }
+    // reactotron logging
+    if (__DEV__) {
+        env.reactotron.setRootStore(rootStore, data)
+    }
 
-  // track changes & save to storage
-  onSnapshot(rootStore, (snapshot) => {
-    Reactotron.display({
-      name: "SNAPSHOT",
-      preview: "snapshot",
-      value: snapshot,
+    // track changes & save to storage
+    onSnapshot(rootStore, (snapshot) => {
+        Reactotron.display({
+            name: "SNAPSHOT",
+            preview: "snapshot",
+            value: snapshot,
+        })
+        storage.save(ROOT_STATE_STORAGE_KEY, snapshot)
     })
-    storage.save(ROOT_STATE_STORAGE_KEY, snapshot)
-  })
 
-  //   onPatch(rootStore, (patch) => {
-  //     Reactotron.display({
-  //       name: patch.op.toUpperCase(),
-  //       preview: patch.path,
-  //       value: patch.value,
-  //     })
-  //   })
+    //   onPatch(rootStore, (patch) => {
+    //     Reactotron.display({
+    //       name: patch.op.toUpperCase(),
+    //       preview: patch.path,
+    //       value: patch.value,
+    //     })
+    //   })
 
-  return rootStore
+    return rootStore
 }

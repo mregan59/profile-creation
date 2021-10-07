@@ -88,7 +88,7 @@ function App() {
     return (
         <RootStoreProvider value={rootStore}>
             <IconRegistry icons={EvaIconsPack} />
-            <ApplicationProvider customMapping={customMapping} {...eva} theme={eva.dark}>
+            <ApplicationProvider {...eva} theme={eva.dark} customMapping={customMapping}>
                 <SafeAreaProvider initialMetrics={initialWindowMetrics}>
                     <RootNavigator
                         ref={navigationRef}

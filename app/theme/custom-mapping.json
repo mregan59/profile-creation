@@ -48,6 +48,7 @@
         "size-large": 48,
         "size-giant": 56,
         "border-radius": 10,
+        "border-radius-2": 16,
         "border-width": 1
     },
     "components": {
@@ -4020,6 +4021,9 @@
                 "parameters": {
                     "backgroundColor": {
                         "type": "string"
+                    },
+                    "borderRadius": {
+                        "type": "number"
                     }
                 },
                 "appearances": {
@@ -4039,6 +4043,17 @@
                             "default": false
                         },
                         "4": {
+                            "default": false
+                        }
+                    },
+                    "shape": {
+                        "square": {
+                            "default": true
+                        },
+                        "rounded": {
+                            "default": false
+                        },
+                        "super-rounded": {
                             "default": false
                         }
                     }
@@ -4061,6 +4076,17 @@
                             },
                             "4": {
                                 "backgroundColor": "background-basic-color-4"
+                            }
+                        },
+                        "shape": {
+                            "square": {
+                                "borderRadius": 0
+                            },
+                            "rounded": {
+                                "borderRadius": "border-radius"
+                            },
+                            "super-rounded": {
+                                "borderRadius": "border-radius-2"
                             }
                         }
                     }

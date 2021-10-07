@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, TouchableWithoutFeedback } from 'react-native';
-import { spacing } from '../../theme/variables';
-//import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import React from 'react'
+import { View, TouchableWithoutFeedback } from 'react-native'
+import { spacing } from '../../theme/variables'
+// import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 export const FlexBox = props => {
     const flexStyle = {
@@ -30,8 +30,8 @@ export const FlexBox = props => {
         flex: props.flex1 && 1,
         width: props.w100 && '100%',
         height: props.h100 && '100%',
-    };
-    var {
+    }
+    const {
         row,
         rowreverse,
         column,
@@ -54,21 +54,21 @@ export const FlexBox = props => {
         h100,
         gutter,
         ...other
-    } = props;
-    //TODO figure out way to pass in element
+    } = props
+    // TODO figure out way to pass in element
 
-    //check if props is array or object
-    let style = [];
+    // check if props is array or object
+    let style = []
     if (props.style instanceof Array) {
         style = [flexStyle, ...props.style]
     } else {
-        style = [flexStyle, props.style];
+        style = [flexStyle, props.style]
     }
 
-    if (gutter > 0 && props.children.length > 1) {
+    if (gutter > 0 && props.children?.length > 1) {
         return <View {...other} style={style}>
             {props.children.map((child, i) => {
-                const isLast = !wrap ? i == props.children.length - 1 : false;
+                const isLast = !wrap ? i == props.children.length - 1 : false
                 const prop = row ? 'marginRight' : 'marginBottom'
                 if (isLast) {
                     return child
@@ -81,8 +81,8 @@ export const FlexBox = props => {
         <View {...other} style={style}>
             {props.children}
         </View>
-    );
-};
+    )
+}
 
 export const TouchableFlexBox = props => {
     const flexStyle = {
@@ -112,8 +112,8 @@ export const TouchableFlexBox = props => {
         width: props.w100 && '100%',
         height: props.h100 && '100%',
         ...props.style,
-    };
-    var {
+    }
+    const {
         row,
         rowreverse,
         column,
@@ -135,11 +135,11 @@ export const TouchableFlexBox = props => {
         w100,
         h100,
         ...other
-    } = props;
-    //TODO figure out way to pass in element
+    } = props
+    // TODO figure out way to pass in element
     return (
         <TouchableWithoutFeedback {...other} style={flexStyle}>
             {props.children}
         </TouchableWithoutFeedback>
-    );
-};
+    )
+}
