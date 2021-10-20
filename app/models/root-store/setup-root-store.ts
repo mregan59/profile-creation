@@ -4,6 +4,7 @@ import { Environment } from "../environment"
 import * as storage from "../../utils/storage"
 import Reactotron from "reactotron-react-native"
 import { AppList } from "../app"
+import { persist } from "mst-persist"
 /**
  * The key we'll be saving our state as within async storage.
  */
@@ -52,12 +53,12 @@ export async function setupRootStore() {
 
     // track changes & save to storage
     onSnapshot(rootStore, (snapshot) => {
-        Reactotron.display({
-            name: "SNAPSHOT",
-            preview: "snapshot",
-            value: snapshot,
-        })
-        storage.save(ROOT_STATE_STORAGE_KEY, snapshot)
+        // Reactotron.display({
+        //     name: "SNAPSHOT",
+        //     preview: "snapshot",
+        //     value: snapshot,
+        // })
+        // storage.save(ROOT_STATE_STORAGE_KEY, snapshot)
     })
 
     //   onPatch(rootStore, (patch) => {
@@ -67,6 +68,14 @@ export async function setupRootStore() {
     //       value: patch.value,
     //     })
     //   })
+
+    persist("root", rootStore, {
+        // storage: AsyncStorage, // or AsyncStorage in react-native.
+        // default: localStorage
+        // jsonify: false, // if you use AsyncStorage, this shoud be true
+        // default: true
+        whitelist: ["appList"], // only these keys will be persisted
+    }).then(() => console.log("someStore has been hydrated"))
 
     return rootStore
 }

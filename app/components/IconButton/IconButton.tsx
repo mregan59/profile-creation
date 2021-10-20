@@ -43,7 +43,7 @@ export class IconButton extends React.Component {
     };
 
     render() {
-        const { eva, style, Icon, children, ...restProps } = this.props
+        const { eva, style, Icon, children, fill, ...restProps } = this.props
 
         return (
             <TouchableWeb
@@ -57,7 +57,7 @@ export class IconButton extends React.Component {
             >{Icon
                 ? <Icon
                     style={{ height: eva.style.iconHeight, width: eva.style.iconWidth }}
-                    fill={eva.style.iconTintColor}></Icon> : children}</TouchableWeb>
+                    fill={fill || eva.style.iconTintColor}></Icon> : children}</TouchableWeb>
         )
     }
 }

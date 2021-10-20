@@ -7,7 +7,13 @@ export default {
             label: "What's your phone number",
         },
         {
-            name: "name",
+            type: "prompt",
+            name: "welcome",
+            label: "Welcome to Hinge. The dating app designed to be deleted.",
+            button: ["Continue"],
+        },
+        {
+            name: "first_name",
             type: "input",
             label: "What's your name",
         },
@@ -58,7 +64,7 @@ export default {
             hideable: true,
         },
         {
-            name: "ethnicity",
+            name: "race",
             type: "mc",
             options: [
                 "American Indian",
@@ -75,23 +81,21 @@ export default {
             label: "What's your ethnicity",
             hideable: true,
         },
-        // {
-        //     name: "children",
-        //     type: "multi_mc",
-        //     options: [
-        //         { options: ["Don't have children", "Have children", "Prefer Not Say"] },
-        //         {
-        //             options: [
-        //                 "Don't want children",
-        //                 "Want children",
-        //                 "Open to children",
-        //                 "Prefer not to say",
-        //             ],
-        //         },
-        //     ],
-        //     label: "What about children?",
-        //     hideable: true,
-        // },
+        {
+            name: "children",
+            type: "mc",
+            options: [
+                "Don't have children",
+                "Have children",
+                "Prefer Not Say",
+                "Don't want children",
+                "Want children",
+                "Open to children",
+                "Prefer not to say",
+            ],
+            label: "What about children?",
+            hideable: true,
+        },
         {
             name: "hometown",
             type: "location_input",
@@ -107,7 +111,7 @@ export default {
             skippable: true,
         },
         {
-            name: "jobtitle",
+            name: "occupation",
             type: "input",
             label: "What's your job title?",
             hideable: true,
@@ -121,7 +125,7 @@ export default {
             skippable: true,
         },
         {
-            name: "degree",
+            name: "education",
             type: "mc",
             options: ["High School", "Undergraduate", "Postgraduate", "Prefer Not to Say"],
             label: "What's the highest level you attained?",
@@ -147,38 +151,38 @@ export default {
             hideable: true,
         },
         {
-            name: "political",
+            name: "political_views",
             type: "mc",
             options: ["Liberal", "Moderate", "Conservative", "Other", "Prefer Not to Say"],
             label: "What are your political beliefs?",
             hideable: true,
         },
         {
-            name: "drink",
+            name: "drinking",
             type: "mc",
             options: ["Yes", "Sometimes", "No", "Prefer Not to Say"],
             label: "Do you drink?",
             hideable: true,
         },
         {
-            name: "smoke",
+            name: "smoking",
             type: "mc",
             options: ["Yes", "Sometimes", "No", "Prefer Not to Say"],
-            label: "Do you drink?",
+            label: "Do you smoke?",
             hideable: true,
         },
         {
             name: "weed",
             type: "mc",
             options: ["Yes", "Sometimes", "No", "Prefer Not to Say"],
-            label: "Do you drink?",
+            label: "Do you do weed?",
             hideable: true,
         },
         {
             name: "drugs",
             type: "mc",
             options: ["Yes", "Sometimes", "No", "Prefer Not to Say"],
-            label: "Do you drink?",
+            label: "Do you do drugs?",
             hideable: true,
         },
         {
@@ -204,7 +208,7 @@ export default {
         },
         {
             type: "photos",
-            name: "additional_photos",
+            name: "photos",
             requiredCount: 6,
             draggable: true,
             label: "show the different sides of yourself",

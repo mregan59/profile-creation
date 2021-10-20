@@ -5,6 +5,9 @@ import * as Types from "./api.types"
 import hinge from "../../data/hinge"
 import bumble from "../../data/bumble"
 import catholicmatch from "../../data/catholicmatch"
+import matchapp from "../../data/match-app"
+import jswipe from "../../data/jswipe"
+import okcupid from "../../data/okcupid"
 
 /**
  * Manages all requests to the API.
@@ -106,8 +109,6 @@ export class Api {
     }
 
     getApps() {
-        console.log("hinge")
-        console.log(hinge)
-        return [hinge, bumble, catholicmatch]
+        return [hinge, bumble, catholicmatch, matchapp, jswipe, okcupid]
     }
 }

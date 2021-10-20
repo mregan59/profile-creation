@@ -2,10 +2,18 @@ import { types, flow, getRoot, getSnapshot, getParentOfType } from "mobx-state-t
 import { withEnvironment } from "../extensions/with-environment"
 import { v4 as uuid } from "uuid"
 import Reactotron from "reactotron-react-native"
-export const UnprocessedOption = types.model({
-    // id: types.identifier,
-    value: types.string,
-})
+import { uniq } from "lodash"
+export const UnprocessedOption = types
+    .model({
+        // id: types.identifier,
+        value: types.string,
+        isSelected: types.boolean,
+    })
+    .actions((self) => ({
+        toggleSelected: () => {
+            self.isSelected = !self.isSelected
+        },
+    }))
 
 const Option = types.snapshotProcessor(UnprocessedOption, {
     // from snapshot to instance
@@ -13,10 +21,12 @@ const Option = types.snapshotProcessor(UnprocessedOption, {
         if (sn.title) {
             return {
                 value: sn.title,
+                isSelected: false,
             }
         }
         return {
             id: sn.id || uuid(),
+            isSelected: false,
             ...sn,
         }
     },
@@ -47,6 +57,8 @@ const Field = types
             "spinner",
             "short_answers",
             "instagram",
+            "gps",
+            "facebook",
         ]),
         label: types.maybe(types.string),
         sublabel: types.maybe(types.string),
@@ -55,11 +67,45 @@ const Field = types
         hideable: types.maybe(types.boolean),
         skippable: types.maybe(types.boolean),
         button: types.maybe(types.array(types.string)),
+        isHidden: types.maybe(types.boolean),
+        isSkippable: types.maybe(types.boolean),
+        screenshot: types.maybe(types.string),
+        link: types.maybe(types.string),
+        order: types.maybe(types.number),
+        requiredCount: types.maybe(types.number),
     })
     .views((self) => ({
         get parent() {
             const parent = getParentOfType(self, App)
             return parent
+        },
+        get prettyName() {
+            const spacedName = self.name.replace("_", " ")
+            return spacedName.charAt(0).toUpperCase() + spacedName.slice(1)
+        },
+    }))
+    .actions((self) => ({
+        toggleIsHidden: () => {
+            self.isHidden = !self.isHidden
+            // parent.numActiveFields()
+        },
+        toggleIsSkippable: () => {
+            self.isSkippable = !self.isSkippable
+            // parent.numActiveFields()
+        },
+    }))
+    .actions((self) => ({
+        hideField: () => {
+            // self.isHidden = !self.isHidden
+            const parent = getParentOfType(self, AppList)
+            parent.toggleHiddenField(self.name)
+            // parent.numActiveFields()
+        },
+        skipField: () => {
+            // self.isHidden = !self.isHidden
+            const parent = getParentOfType(self, AppList)
+            parent.toggleSkippableFields(self.name)
+            // parent.numActiveFields()
         },
     }))
 const McField = Field.named("McField").props({
@@ -80,6 +126,10 @@ export const App = types
         },
         get order() {
             return self.fields.map((field) => field.name)
+        },
+        numActiveFields() {
+            const count = self.fields.filter((f) => !f.isHidden)
+            return count?.length || 0
         },
     }))
     .views((self) => ({
@@ -104,12 +154,12 @@ export const App = types
                 }
                 return field
             }
-            const fieldModels = fields.map((f) => {
+            const fieldModels = fields.map((f, i) => {
                 const field = structureOptions(f)
                 if (field.options) {
-                    return McField.create({ id: uuid(), ...field })
+                    return McField.create({ id: uuid(), order: i + 1, ...field })
                 }
-                return Field.create({ id: uuid(), ...field })
+                return Field.create({ id: uuid(), order: i + 1, ...field })
             })
             self.fields = fieldModels
         },
@@ -118,6 +168,8 @@ export const App = types
 export const AppList = types
     .model({
         apps: types.map(App),
+        hiddenFields: types.optional(types.array(types.string), []),
+        skippableFields: types.optional(types.array(types.string), []),
     })
     .extend(withEnvironment)
     .views((self) => ({
@@ -131,7 +183,7 @@ export const AppList = types
         },
     }))
     .views((self) => ({
-        getFieldsByName(fieldName, appOrder) {
+        getFieldsByName(fieldName, appOrder = null) {
             const fields = self.appsArray.map((app) => {
                 const field = app.getFieldByName(fieldName)
                 return field
@@ -153,30 +205,48 @@ export const AppList = types
     }))
     .actions((self) => ({
         saveApps: (apps) => {
+            console.log("SAVE APPS")
+            self.apps = {}
             apps.forEach((app) => {
                 const appModel = App.create({ id: uuid(), name: app.name })
                 appModel.addFields(app.fields)
                 self.apps.put(appModel)
             })
         },
+        toggleHiddenField: (fieldName) => {
+            const fields = self.getFieldsByName(fieldName)
+            fields.forEach((field) => field.toggleIsHidden())
+            if (self.hiddenFields.includes(fieldName)) {
+                self.hiddenFields.replace([...self.hiddenFields.filter((f) => f !== fieldName)])
+            } else {
+                self.hiddenFields.push(fieldName)
+            }
+        },
+        toggleSkippableFields: (fieldName) => {
+            const fields = self.getFieldsByName(fieldName)
+            fields.forEach((field) => field.toggleIsSkippable())
+            if (self.skippableFields.includes(fieldName)) {
+                self.skippableFields.replace([
+                    ...self.skippableFields.filter((f) => f !== fieldName),
+                ])
+            } else {
+                self.skippableFields.push(fieldName)
+            }
+        },
         getOrderedFields(appOrder) {
             let orderedFields = []
             return appOrder.map((appName) => {
                 const app = self.getAppByName(appName)
-                orderedFields = [...orderedFields, ...app.order]
+                orderedFields = uniq([...orderedFields, ...app.order])
                 return app.orderFields(orderedFields)
             })
-
-            // for (let i = 0; i < appOrder.length - 1; i++) {
-            //     const firstApp = self.getAppByName(appOrder[i])
-
-            //     const secondApp = self.getAppByName(appOrder[i + 1])
-            //     const secondAppFields = secondApp.getOrder(
-            //         orderedFields[i].map((field) => field.name),
-            //     )
-            //     orderedFields.push(secondAppFields)
-            // }
-
-            // return orderedFields
+        },
+        getFieldOrder(appOrder) {
+            let orderedFields = []
+            appOrder.forEach((appName) => {
+                const app = self.getAppByName(appName)
+                orderedFields = uniq([...orderedFields, ...app.order])
+            })
+            return orderedFields
         },
     }))

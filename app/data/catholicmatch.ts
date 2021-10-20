@@ -5,22 +5,34 @@ export default {
             name: "first_name",
             type: "input",
             label: "What is your first name",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/8661da57-8277-4d2a-ba42-ed97cc828e70.png?Expires=1634234400&Signature=n~twpaZcmAFn0-4vMve~JotB1-V7f-9OmDm1D5e8y3KZwLjIZmZfQy39jUgifWWvL~znkYHxeZbDYgRKGLPeN9LrZ3Mvw6F18EjnZFq08yGhyER24a~FwU66k0kurSDeC3ULNP2XhyXrpAo7kIhqueJluWSk-w8J0Efz6n4x4y8_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/xrpRY5V",
         },
         {
             name: "last_name",
             type: "input",
             label: "What is your last name",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/3373e512-0bda-4b54-bf1d-e637adfc10f8.png?Expires=1634234400&Signature=aALrc9g~UbLel1Njd4XmzFWrYaaY65T5FPtyhd3bFtLOWMSKSmNtoRZTyQS~UUk1KexkgK3Fj0ePIQulKvfK--aNtSo9sIRmETaAuI5ByL08uTq-K0mN-SZAArma9RDwoS76tBNPiF-KFJcHkH76KE2CtuIXRWkZJ3b7-LRAk-8_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/ELbvDWR",
         },
         {
             name: "location",
             type: "input",
             label: "What is your location?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/081db047-de6c-49fd-a8ea-139b3bc30bb2.png?Expires=1634234400&Signature=jBlF3aymRXIJZWf2-yiC3nmu8KAhnLsAPgpwPsOYnxytnkQQRJcSkIG7Lnr5Ktnsc2Y8VmswByzYpuyBOnqn9Ijf1HCu3oQ7PByBfKzljn5YpYZOZL2fF08hG~x8TW5r33HAr7kivrjpkYBN7dQeAStAHfUwzTwPeNptqukc6As_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/jg0JGMo",
         },
         {
             name: "gender",
             type: "mc",
             options: ["man", "woman"],
             label: "What's your gender",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/2fe330f8-b69a-4697-a234-8a7a1f1dd8b6.png?Expires=1634234400&Signature=ep5~7vGYTEA5TqDrXLIheXmlCR7mmhOnrD0n-Hz4EMoZQEoXgQRnarWn01JEd85Un2A~9CmzOiwKUoyl~61MAQhhAtAkPb6rhpbqugaMPhf2cftWqGPmQGwUKmjdr9ate4iyml-n3n25c3LMvEQvVYP4XQm2TNh0TU0BDZecYDc_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/dlG7zWb",
         },
         {
             type: "prompt",
@@ -29,23 +41,35 @@ export default {
             sublabel:
                 "In order to find the best Catholic singles for you...lelt's set up your profile!",
             button: ["Get Started"],
+            screenshot:
+                "https://resources-live.sketch.cloud/files/cf3248ec-d873-4cb6-8a7b-aafe7ab8aa7c.png?Expires=1634234400&Signature=Gn1q2alseU2KNdc8JhiTVqW8ZhUoskkTu7nMT9B72WiaeyyXp4ZJZwAvFw0dG3G4B4Bhn8SQqM8RTPWtr8uodgwTXBwITFOquMFbO~hzyB8mvrim1fuFyZWoBV-LC689eR68kfMRX3-uUA0dIza8IuVqeUp75JFmnBRXNiSGLl8_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/zxp2wbb",
         },
         {
             name: "marital_status",
             type: "mc",
             label: "What is your marital status?",
             options: ["Never Married", "Widowed", "Divorced", "Anulled"],
+            screenshot:
+                "https://resources-live.sketch.cloud/files/6ac06f7a-0451-487e-8d4b-a2fe135aea5c.png?Expires=1634234400&Signature=ktZs7mgEb2O-KDBBOqoSEAWQ94lRY1Z1eK71mmYoadpW-pN3Z83EOOQ1hZ9PdN~k7jkW2UOVi32av4o01fIO-gHPCfxvrRF5E-M2~VKnQhB3cqTR-ys0xhLQqmSbI-44WNoAmRitWkjHqwNfayuWQ7GWjlyGV7wdt4zj1fhUA6E_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/ZO0784p",
         },
         {
             name: "birthday",
             type: "datepicker",
             label: "What's your date of birth",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/9c78bf94-1e8d-46b4-a505-5e77d6780f30.png?Expires=1634234400&Signature=tsDiAuMuIvyaSvPsz2wdQikmkU2wbXtmXn3h1r~gYNPN9nMGyLsChApa6jjKFTrN0pDFrl0UwGtdBoTLPvNHt1rKqEGCho9t4qEmUYQBce0DxTOTldiTsdbbchk1PcRBmXYq8bqQ24K0Hykgq4trzrewiU9QNN57hcK1vg8EckQ_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/JnbmkWr",
         },
         {
             name: "diocese",
             type: "mc",
             label: "What Diocese are you in?",
             options: ["Diocese"],
+            screenshot:
+                "https://resources-live.sketch.cloud/files/094e0be9-0046-43c4-85d2-584f3883bba6.png?Expires=1634234400&Signature=M~iM~XokSGI7HJ1LfKpxi8JHs3DxpC7CEcETSo9OAITjdEhGZeinZaDiVhYqo-cunoYWcPI54~bpoEcl0M7ScMF5AUUOZI18bK50PY8z3GFQ1jASFmr9pV0oBy4-3UEsBwAgRAJvMy9BPM2tYTwo3R77lhexiz-Wyakqj5VXcpM_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/v8qkpKM",
         },
         {
             name: "referrer",
@@ -59,13 +83,29 @@ export default {
                 "From a friend/family member",
                 "At a conference",
             ],
+            screenshot:
+                "https://resources-live.sketch.cloud/files/21acb285-5d9a-4d8c-876d-9bc93fd79c27.png?Expires=1634234400&Signature=lDvHhMqfqKfse26YbHQXvo9qDTbTkI~nmDK-faN64MX4cdMQfurO0lamR-ZIoFoUJXtMral1ysDFmVZICSKfq5iPScn9Tt9FC6uxAhjL5Es8vMg5GbWuOClFzD6oP6INRHBH4gIT0QGy0uV6kMssAbW42Wpw-1kZG9PbZWGgHTI_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/4aG8Mxd",
         },
         {
             type: "profile_photo",
             name: "profile_photo",
-            skippable: true,
+            skippable: false,
             label: "Add a profile photo!",
             tip: ["Profiles with photos do 10x better than those that don't have any photos"],
+            screenshot: "screenshot",
+            link: "link",
+        },
+        {
+            type: "photos",
+            name: "photos",
+            skippable: false,
+            label: "Add more photos!",
+            tip: ["Profiles with photos do 10x better than those that don't have any photos"],
+            screenshot:
+                "https://resources-live.sketch.cloud/files/a33a86a6-190e-4362-851f-a5de2cbbf63e.png?Expires=1634234400&Signature=kOJotAP9qIpvI3XX74CAhJxRpiD3G8bUe-kLKDLVHMiMZYmQFMYkqR2IEX3m0AoZox0EBasJixShQaCYLX9WlU0m-T3YFe-Q5R-qiqzW96AJ12zC~slW~55SmjcX4c847KBS0QvBqNxtXbAinKgM0iZ7YBB01UwAQKxVoH7Xxvk_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link:
+                "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/GmbeEnb#Activity",
         },
         {
             name: "height",
@@ -73,159 +113,12 @@ export default {
             section: "Appearance",
             label_view: "Height",
             label: "How tall are you?",
-            // options: [
-            //     {
-            //         name: "Under 122 cm",
-            //         title: "Under 122 cm",
-            //     },
-            //     {
-            //         name: "125 cm",
-            //         title: "125 cm",
-            //     },
-            //     {
-            //         name: "127 cm",
-            //         title: "127 cm",
-            //     },
-            //     {
-            //         name: "130 cm",
-            //         title: "130 cm",
-            //     },
-            //     {
-            //         name: "132 cm",
-            //         title: "132 cm",
-            //     },
-            //     {
-            //         name: "135 cm",
-            //         title: "135 cm",
-            //     },
-            //     {
-            //         name: "137 cm",
-            //         title: "137 cm",
-            //     },
-            //     {
-            //         name: "140 cm",
-            //         title: "140 cm",
-            //     },
-            //     {
-            //         name: "142 cm",
-            //         title: "142 cm",
-            //     },
-            //     {
-            //         name: "145 cm",
-            //         title: "145 cm",
-            //     },
-            //     {
-            //         name: "147 cm",
-            //         title: "147 cm",
-            //     },
-            //     {
-            //         name: "150 cm",
-            //         title: "150 cm",
-            //     },
-            //     {
-            //         name: "152 cm",
-            //         title: "152 cm",
-            //     },
-            //     {
-            //         name: "155 cm",
-            //         title: "155 cm",
-            //     },
-            //     {
-            //         name: "158 cm",
-            //         title: "158 cm",
-            //     },
-            //     {
-            //         name: "160 cm",
-            //         title: "160 cm",
-            //     },
-            //     {
-            //         name: "163 cm",
-            //         title: "163 cm",
-            //     },
-            //     {
-            //         name: "165 cm",
-            //         title: "165 cm",
-            //     },
-            //     {
-            //         name: "168 cm",
-            //         title: "168 cm",
-            //     },
-            //     {
-            //         name: "170 cm",
-            //         title: "170 cm",
-            //     },
-            //     {
-            //         name: "173 cm",
-            //         title: "173 cm",
-            //     },
-            //     {
-            //         name: "175 cm",
-            //         title: "175 cm",
-            //     },
-            //     {
-            //         name: "178 cm",
-            //         title: "178 cm",
-            //     },
-            //     {
-            //         name: "180 cm",
-            //         title: "180 cm",
-            //     },
-            //     {
-            //         name: "183 cm",
-            //         title: "183 cm",
-            //     },
-            //     {
-            //         name: "185 cm",
-            //         title: "185 cm",
-            //     },
-            //     {
-            //         name: "188 cm",
-            //         title: "188 cm",
-            //     },
-            //     {
-            //         name: "191 cm",
-            //         title: "191 cm",
-            //     },
-            //     {
-            //         name: "193 cm",
-            //         title: "193 cm",
-            //     },
-            //     {
-            //         name: "196 cm",
-            //         title: "196 cm",
-            //     },
-            //     {
-            //         name: "198 cm",
-            //         title: "198 cm",
-            //     },
-            //     {
-            //         name: "201 cm",
-            //         title: "201 cm",
-            //     },
-            //     {
-            //         name: "203 cm",
-            //         title: "203 cm",
-            //     },
-            //     {
-            //         name: "206 cm",
-            //         title: "206 cm",
-            //     },
-            //     {
-            //         name: "208 cm",
-            //         title: "208 cm",
-            //     },
-            //     {
-            //         name: "211 cm",
-            //         title: "211 cm",
-            //     },
-            //     {
-            //         name: "Over 214 cm",
-            //         title: "Over 214 cm",
-            //     },
-            // ],
-            //  answer: "127 cm",
+
             input_type: "slider",
-            // title: "How tall are you?",
+            title: "How tall are you?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/4e49cab6-6c24-475e-844d-12cc1f4ebe60.png?Expires=1634234400&Signature=WFx0Jda-Ve4XFjOvWU-UTdZT8PGk~cJ4Iw~X5xOTyz6w49E-52eEI1LnSHa6ldGyzUwRrgiPrryo90d1XSzNb7UhvEWN73i4nDg-TD7XWTbce2jzbCt~rPbynL832EplL-ZT1PndKAZxnuvYZL7v65buN7KSXFqasATBt7iyEwo_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/m1peDwg",
         },
         {
             name: "eye_color",
@@ -262,6 +155,9 @@ export default {
             answer: "Blue",
             input_type: "radio",
             title: "What color are your eyes?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/0f10b495-9e10-4c1f-abf9-169d9c1c1f45.png?Expires=1634234400&Signature=BjYSi2zuvy3SPhjGh8oyZ6SduoZHjWYSNFOaNEM1m-Gx1XyCirLVr2Qdhzhf0yIb4j1KUamgaxawQL-0i2z~6BVbj0CDEbjfbSzgsXRNQDtxrVd5uZTi46tJ7vDcWnwDOwneXt4RYMzy-Tuym9HjhV0o0-ySbNKoI7bwPCv8Fyo_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/DPbJm8J",
         },
         {
             name: "hair_color",
@@ -315,6 +211,9 @@ export default {
             answer: "Red",
             input_type: "radio",
             title: "What color is your hair?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/674d19de-160c-4188-ac1d-d515f923bada.png?Expires=1634234400&Signature=Kp-vFEby5jfXhVI0hjfGh~QMWmOmzdSK8xBJNJweB-BWG5nEUA6RyT1AkZQiJOoZlNtypwCuUwcTHtGyn2d5x7~0Oo~nokpvhkrg-ymFvLRPonPUQIohysYuiH0AGLxYXKnPr7D2Euta4sXbHN2PD~iiiQWJRXDhvg2NvLkKWuM_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/agv7rV5",
         },
         {
             name: "body_type",
@@ -350,6 +249,9 @@ export default {
             answer: "Slender",
             input_type: "radio",
             title: "How would you describe your body type?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/fc72675a-7e50-4fac-abaa-1c8df1217e9f.png?Expires=1634234400&Signature=JaPgBbYJ1QnaHeL2v68SXt52kYaxMsG978owE~6-HkC5rMrOYWv8Web42~eqz7VuFLfINFr5pofd2RGIPoC80mxSoIOntRZNgjIIJfX92rx56N0-YyjQ7aTwFPFg781X0-GSpGR7itIxkudLdQ2LajI40Tv~xxsFoW0TU3x-beo_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/AxbEeVr",
         },
         {
             name: "race",
@@ -402,6 +304,9 @@ export default {
             answer: "White / Caucasian",
             input_type: "radio",
             title: "What is your race?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/b4297850-e55a-4687-b244-815e366dc938.png?Expires=1634234400&Signature=L5vWzOsM0LceeE34oG3f2v85HhY8CqqJgRNu5djmxwqXhL5yL9~zL330ifnZQKlKiqJ~6w-lqj6aIAmUV3BgnstkznarfXu7aRfuw0Y~9lmq0~yav3mJ1lu3t6TKZ5DUbP9dzWomYUUsEN3MhDw1HQOAEzXXfOnAG2k6By8jI7I_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/09J8P02",
         },
         {
             name: "tattoos",
@@ -451,6 +356,9 @@ export default {
             answer: "No, never",
             input_type: "radio",
             title: "Do you have any tattoos?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/c972898c-dade-40b5-bbe4-42fe2f06cb81.png?Expires=1634234400&Signature=M4iSxVpRZT2kPDEt7FZDtnQ4~8Ft0G2nW6ngoFdmQgeLQYUs~ZJe62SPbIibyijahoMumlKZNT93027Rya7jhRFrN1fO5KTuUTckEqDrhMOFOsJ2tFFjzDGN2Q3CXS7VzyWznmWcBPCXKIGNnjWOijBIJTy6CH0Umu7g~OJxrPw_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/l194mwe",
         },
         {
             name: "piercings",
@@ -495,6 +403,9 @@ export default {
             answer: "Yes, just my ears",
             input_type: "radio",
             title: "Do you have any piercings?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/75749a6a-7b35-4957-9125-8465bdbd8a51.png?Expires=1634234400&Signature=t6OJ1dghNNA4tXwZOkawKhbeRBhaLlZ0R9jxqb93lyJQ9p4cRpTzadK0iCR6i0ufJXcsLQhDHInVTlZjNM2PbmpIBlXD0n9j0pg8mKnSbBPNxfeIbRjvoU2nVbzLjfNO2Mi3CiQOwoHhM~-vOvrMOt~LxhXVL--dys94Am55VCg_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/kalvO8Z",
         },
         {
             name: "daily_rhythm",
@@ -528,6 +439,9 @@ export default {
             answer: "Night owl",
             input_type: "radio",
             title: "Are you an early bird or a night owl?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/bab9945d-4115-4fd5-8f6b-d711be58c74c.png?Expires=1634234400&Signature=O1rZGmKvnLjzp~qpzTdTAQBjgZXH50OgxsiaeyHQTwjYyOdvJIziOJW7ez7qx8qcOiXVjbxWtuhmwquoV0Ni0iv04bvvM5pcDzXyabf3VjE3Gx~DZth1iP3Qk8sdcDyKIibb644JHW2ic91ahJW6MzQg-fbF63pPxzYeKzVn4lQ_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/oYrOAgQ",
         },
         {
             name: "exercise",
@@ -565,6 +479,9 @@ export default {
             answer: "3 - 4 times per week",
             input_type: "radio",
             title: "Do you exercise?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/85d790be-ab83-4b42-8807-132273528439.png?Expires=1634234400&Signature=AD8t~aYNn9HreKWl2OWOK3N~hpXxdT~ASLjlo0SgjAQpcv8qMv2WuZ~S7ra8TNffd1MVyP9AWBTpqtoDHpJ3cJdfqkmcODHNSAoIjbWVWrQLDqu~T9OE3TMeJ7ptjcqsrT8JFDRXc9-h3wIYW~k2xiLGO91VOyruVMTY3Q8cuRM_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/R14RwWZ",
         },
         {
             name: "diet",
@@ -606,6 +523,9 @@ export default {
             answer: "A bit of everything",
             input_type: "radio",
             title: "How would you describe your diet?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/30a1b624-6176-46be-8d7c-e61c26e75bef.png?Expires=1634234400&Signature=aVUge2OvWK4wV1bfz8mEOYe1rA27AIyKBKtWdMDYbOrWv9rClUnPnYvGa0eYDjDUMnYvnW3nJ38En-lPaL1B945vuNPtcSXr718O2KsD0-1hcqiephr3eLKH86Z~Tqkq4VUpt2U3bWYazs8z9lLaqdBuJtjHTTch7gWeiJ9Mbsc_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/1Kv8gAp",
         },
         {
             name: "eat_dinner_out",
@@ -638,6 +558,9 @@ export default {
             answer: "1-2 times per week",
             input_type: "radio",
             title: "How often do you eat dinner out?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/bb471ef1-f3b0-4123-8286-2c8066bbec44.png?Expires=1634234400&Signature=OiJG96IY1-mv742TCiggiHWL2gwOmsiTBYq~PS3nV3OWRaQJxSC9TA12mAxJiel~0dFQDM6Q0PFRaaIbmuKRFhuDbErdU6GzxHb3OFqmiLOV-dMi1LPsfaceG1qfYgZQigHX2iSjt4gZ~v5I~xxGxq-k4KxesgV9QLV6F~Sfxck_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/papm0xR",
         },
         {
             name: "drinking",
@@ -674,6 +597,9 @@ export default {
             answer: "Socially",
             input_type: "radio",
             title: "Do you drink alcohol?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/63369211-1dbb-40dd-bc6c-51e08c9fcb6a.png?Expires=1634234400&Signature=AVLyEC2~2vvDBO61LbUGSuqNoTUiO7p6ayTT-Xgw-6U20ekG~IQYYj0yo-1lksaSpk7vVXq3dFI8-ZmSZ6Urbog3Me~IY03be4jK7cb-ReR5MQEH09F9-S7jxpadbWNmpnLhsMVhOTlin9RLV~6qpToJxmqUaj3XC0udtmXcJuM_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/Vrm9yz7",
         },
         {
             name: "smoking",
@@ -703,6 +629,9 @@ export default {
             answer: "I don't",
             input_type: "radio",
             title: "Do you smoke or use tobacco?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/5f6d489a-2984-4d20-883f-6b5d0fac2db4.png?Expires=1634234400&Signature=EsdvWSPkyT53WC9lzzY8NnroecmfOR1uLP3L4Mh917yPasHYn~4~LL~cQrCrQfigZrdqOgsZJWPIvyXGEXZCcdSdlQViS5rziORFa9eFAqZmUJA-6PYZjd~EwOXbQnw0PTr2g~aq6KbXXyryDAeV7BB9VO3UTKwsGsP8Oxp5eZI_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/YGA7gvO",
         },
         {
             name: "tv_habits",
@@ -744,6 +673,9 @@ export default {
             answer: "A few hours a week",
             input_type: "radio",
             title: "How much television do you watch?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/3f79420a-2d4a-4787-9aa4-995208c8b0af.png?Expires=1634234400&Signature=bIsKCnshvPdICjy~~9ujiMJVS8JFTlLDXQ1vRKgn-M~I2aM6ei4gVNG1zUTe8U9RzEczo8DI2MkPG6mvQ0C1pJmkvVL1S092qiHaOdZOIQhRSrmXLd0HorQ464lAK4BTCJr5~Nuom6qlDD0dlmLttWeDnbojXUUsPdEKIZs2G1g_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/KvbDoW1",
         },
         {
             name: "long_distance",
@@ -784,6 +716,9 @@ export default {
             answer: "Maybe, for the right person",
             input_type: "radio",
             title: "Feelings about long distance relationships?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/77bc88e8-313e-452d-92aa-111c9481024a.png?Expires=1634234400&Signature=iGdmZJ8P1ZErtwP4KRZ07efjexR8BXkM31~JClp8QYrCFO4Jkmsa5hW7NYqps8vkmphc~0SIGUs8~frOwMpaJjku62VqJBXuRzj2BmhZH3My3UkNVMeWugcc1njsRSXlKe2VwwESLtCc4wKkdwBs3l2u4c3~wf~B48M-7ds8UhU_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/wLpoV1m",
         },
         {
             name: "relocating",
@@ -827,6 +762,9 @@ export default {
             answer: "I'm open to live anywhere",
             input_type: "radio",
             title: "Would you consider relocating?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/134f507b-99e2-4319-a6dc-1e721abcf670.png?Expires=1634234400&Signature=QtJYZAYlWTv4cBb4pJmV-feKkcICXRPeynyntqXee~ZBIK4oClIb802QcqrNHEjBpmOEjhAEbifxeflY664pQEFJLH6lMJsjswzKfJRWZCNNi9ULiXPl0mWZ-Nnz-FRisVQgC6sQ3Cw3cb1VrMZl~kHW2pgaNGKvtocWTiuq4-s_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/qerElw3",
         },
         {
             name: "children",
@@ -861,6 +799,9 @@ export default {
             answer: "No",
             input_type: "radio",
             title: "Do you currently have any children?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/dd8f3bc7-30c6-49a4-b515-8a6e378c91fb.png?Expires=1634234400&Signature=EV-xfvOi4IMVHRFUt74z1VxCAkCcsrqSEjvXr193EronksrLG3oTzN1d95M~jgq--8b-gK4n4qZ1kCRLnGVofNrCVMEh~wcTYp~4a2vK8xqLCijKWf~H80Qmq6Ffs6J2LL6jzIbNKbI7FQK3Sm1G~5ShvWWxCAB4NHCtRnZqmyI_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/L0jaRWy",
         },
         {
             name: "parents_marital_status",
@@ -905,6 +846,9 @@ export default {
             answer: "Dad and mom",
             input_type: "radio",
             title: "Growing up, who was responsible for you?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/80a89b11-a3c8-45f4-8be2-337e28038451.png?Expires=1634234400&Signature=heiC-nIOrz4b7mCI6oJInDMDHA1pKYud~AzjHhj6~NM4oIGi5tjaFFTUDqUIfMqJsr7fJWL21u1rfgHqLpGUxckYkUAfZqejXdVj-8Vx0UpMfFbmRN9pgLdm43U2WWGUh4AmluEPjajX0CwSOpt9hBJwjQSEGa6uyl0xG6p84QY_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/7yD8WdY",
         },
         {
             name: "family_ties",
@@ -957,6 +901,9 @@ export default {
             answer: "Often talk and do things together",
             input_type: "radio",
             title: "How close are you with your family?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/1835c66e-3780-4237-82c4-894092d1f8d6.png?Expires=1634234400&Signature=gDWLBDgl8YUGa4fFhfI8WKykJUmrsevYDZWLvnp08fVz6t2A4Y4UdS6v8NLPgw1F4gORbOOcbZM2EHS3N0o0NF04dvvI9lY91SeK2ijFIjOTrcVh2UIBsxeo0norhD77sRnH2DJ8YuIFGT9HsNSU~n5rPAvgxW9FW7OfI3L8wT8_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/ygbxKwq",
         },
         {
             name: "birth_order",
@@ -996,6 +943,9 @@ export default {
             answer: "In the middle",
             input_type: "radio",
             title: "Where do you fall in your family?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/1b39e7d3-bc55-4617-92ee-fb12e60bb56f.png?Expires=1634234400&Signature=bKybIN5Gyfk-~dnFSbLRxvlgiLnHbbh9ncxQ8KqTfHDKBZRdfDuPjtnEA6OsXoAucLQj24SjbmC-mjli2e~RGNSKec6m~5UU5xVVqIMWv~KLbIQ0mTNAMmqdcMiMU6hcjRg4moM00hJt2qvDSodXYKH42tuHnnJiiB0oob-3TAM_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/9PA8rZp",
         },
         {
             name: "rural_urban",
@@ -1040,6 +990,9 @@ export default {
             answer: "Small Town",
             input_type: "radio",
             title: "Did you grow up more rural or urban?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/49b47991-f28d-44cb-bf95-b4ffaf79b4f0.png?Expires=1634234400&Signature=JC8p9D39yapEkMULOI2P1JcjGb-eNTbw5N1U0MRnUzV05UqSoZEVkW3hV~HFhsznFC23c1qf3bStvh12YrsxNNZG7bJC8mppx3u-dzGf-SJ1BLnd1-4pJcsQHQFew9VeWkcOIJS3-Mfk1gLn89k15d8JY-o5DQmn5ORywit6xWQ_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/PGJkYWP",
         },
         {
             name: "children_ideal",
@@ -1072,6 +1025,9 @@ export default {
             answer: "Don't have an ideal",
             input_type: "radio",
             title: "What would your ideal number of kids be?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/3fcdec81-7599-43d3-88bd-7b9c18db9315.png?Expires=1634234400&Signature=AAzwXeYkLMpdKIWIMgDybLWHZYHOP5rv1eWz7sRJjsM7qUM4dARxT27TDZrDIBD3vVY-GiBErmwZFeIgaL8JL8QI9kuSsUF6e6YEL~ae01b6WCK-Kmhfdz48O940LcMsO7hEQ40~nRy3vncTU5EvtO~L0c0gi5tisSJR0UGryI8_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/g0DdvEa",
         },
         {
             name: "political_views",
@@ -1117,6 +1073,9 @@ export default {
             answer: "Conservative",
             input_type: "radio",
             title: "Describe your political views:",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/687a3ac7-7508-4b53-9c24-9d9a1d7aa9cc.png?Expires=1634234400&Signature=F1tfNG8E2-9Uq-KHDY~CRjCV8gODbSVFiDblDjDQIzg6DoibB6WCnq44tdiwwuy9ebtd3URSlLtuMN9NvbwGAp~rubELrvI2h-2yujJpkZ3EFSLSbV-dSxPDZfn6pJGoYuYrEi1CssDZQqjn6DR6R4HVXh92st9rkcQMCNV~rAM_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/8yab3z3",
         },
         {
             name: "education",
@@ -1165,6 +1124,9 @@ export default {
             answer: "Graduate degree",
             input_type: "radio",
             title: "What is your education?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/a1bdeef3-c5fe-4c88-bf46-75cdc729104d.png?Expires=1634234400&Signature=S1gXyh22FZPuG6JTfbIxdL9fGoB1JAkOrcTwlokJ6VYTStwl8V~oSlVxtShM1-n6w1tlGyWOqu0-MfCUSHRn0ZjQnX8yEB33TgM12a2OERZiZa1gtCGiSOHMlce97n2DPt~Kl~pdkq3DzZ-kWRHFF97Q1sukxs-PC~ChOvroYP0_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/254n8bp",
         },
         {
             name: "primary_schooling",
@@ -1206,6 +1168,9 @@ export default {
             answer: "Homeschool",
             input_type: "radio",
             title: "Primary schooling growing up?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/bee8d3f4-56af-4632-9354-e3894eaae1bc.png?Expires=1634234400&Signature=LA0uZ2AVaKM8~VnaDL6KQ0M6-g4pfXtI3z-vGDQAT1lgdVgP1DwA~KygQ4cLJvRmVwRImXFop-MuDaYnrLR5rrvGzSrGQBK1h~GjBu7I5Ci~iQ5~8Ry51ivEdA2c9sY4a5XPjwNu-jg9mMjDzb3A3bW18KLqMzlmbU3~dCDau90_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/MydA1Wb",
         },
         {
             name: "occupation",
@@ -1302,6 +1267,9 @@ export default {
             answer: "Computers / Software / Hardware",
             input_type: "radio",
             title: "What do you specialize in?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/96a3af6f-0db0-4cb8-a0e9-c02157e9b77b.png?Expires=1634234400&Signature=fSs8483lyGI8ykWwtfq05ZUdDpXlFJcCGT-41bVAXkM9r29vwgOJCmtcaMwJTeLp3nuxfE48IAWYa1LtNNom4J1izingEhsMXAEy5v4WKETyPnx1k65ONec1OVFqU0jkrVFZJXCwMeL6AiwpZ5PZLgzLWQaYBJx7Cif54PIvfJ4_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/52O85Dp",
         },
         {
             name: "employment_status",
@@ -1352,6 +1320,9 @@ export default {
             answer: "Full-time",
             input_type: "radio",
             title: "What is your current employment status?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/3cef3658-15c8-4bdf-b26f-b070bd39589f.png?Expires=1634234400&Signature=vt5ljj13yoWuERWuRtma56JyvjqZ9ewHscb0fI1rBmA8E3kJqkjtSuwkOiLA1m2sr5hjGO45QjFq6yHiXFCNtR6ZZxiEC6xthFWDk1~VycVxUppLwwWiTaiNE9wtg-eer1tL8hprnzOGkFkaXBdRuPbTl5U3rsjHgaPTv54GI2M_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/bg4QjK0",
         },
         {
             name: "attendance",
@@ -1389,6 +1360,9 @@ export default {
             answer: "Weekly",
             input_type: "radio",
             title: "How often do you attend Mass?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/0be2cd29-bf14-45b8-a81f-721452d269b8.png?Expires=1634234400&Signature=XW4hHAqtN0HykcG-F~O5N8RABwXFeytToOWMzYQQ0wxgTEFgiY~UmZpXynJxXovcBOV48gjx0mJOJgj01vk2hxBmKdhyUZPGxeAEkf4U9hU9ysX~Yfl8HTTDDrKJl9IR2JpdQsonOQHaCi3GkvLS-wT-K6CypVXSXQJHbdgEQAY_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/3Oe82Eo",
         },
         {
             name: "vocation_flag",
@@ -1413,6 +1387,9 @@ export default {
             answer: "No",
             input_type: "radio",
             title: "Considering a religious vocation (priest, nun)?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/f8b96337-cd92-4165-a7d9-59a305f70a9a.png?Expires=1634234400&Signature=he7sAjsAynseu~w5m9HlxO94cCM8eR2xhHAXS0ZS4BmKSEIY-bQfGsaku7Fq8blwCKBKzoGfi~cwmEODgngQ9jSsjijz0-S5fHEpG4MHOWZ5nYwQxAfqjufAYropXahK-uzMTck4MhoPqAnZaKx7cXOV84bjT4JuVXkjoBJU1Ew_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/rbYakxq",
         },
         {
             name: "convert",
@@ -1467,6 +1444,9 @@ export default {
             answer: "No",
             input_type: "radio",
             title: "Are you a convert?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/cf859e80-d89f-40fe-97d6-9efdcb149b37.png?Expires=1634234400&Signature=MG6yI8u9s4dAvtMLAb4RK6cq~avq9483AcMZ6YwYBzMPyCwktZs2AYP-7clSNK-4NDyr~C2bgUIQaBuEQ1SRwtC33vtpzGrlLWNNnDCQAYXpsz~YUwwOr3v997ynRSl57fyNIEsSgqv2rcuGVpBU~FseQ2thM5bgmogT2dP7y~k_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/nRpGaxV",
         },
         {
             name: "liturgical_style",
@@ -1523,6 +1503,9 @@ export default {
             answer: "Traditional Latin Mass",
             input_type: "radio",
             title: "What liturgical style do you prefer?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/b345e81b-ea37-4ed6-afe2-769e6c1b210f.png?Expires=1634234400&Signature=aFIrru5Ao0GBGnBAZtL2BA3OZzDg04-sn3MhknzMhPxDqPr9GI8X-d1p6QSjnFTVdrCXjRUU6id0mH7KlW0CH4KMG4ATtwrwgwtKSUxvITplE2iO2-IZj6ZKNnrbFShZVRfgndZPPtyT-4T4bciOgWgEO59HPjlaAcbr8PymJSo_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/QbvoKy1",
         },
         {
             name: "faith_practice",
@@ -1561,6 +1544,9 @@ export default {
             answer: "My Faith is part of my daily life",
             input_type: "radio",
             title: "How much do you practice your Faith?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/a2e8ebbf-8955-4382-b04e-1235744d6f09.png?Expires=1634234400&Signature=B8HLMfK5Gb6nsKLFvD-MqfE87K4hNP17nqObIVM3JfG923Uuo6AsHEus8rIRjeFMbltE7w7OQaDRa14nZYMNwolxISIHONMsiRtw-TAorpp6cXQ8n3yjyYmPbZ20Ug9Frqr~e33NtbFvlXEsiinj5jBs8g~buLFyfEuQX96cTqk_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/xrpRY7V",
         },
         {
             name: "eucharist",
@@ -1592,6 +1578,9 @@ export default {
             answer: "Yes",
             input_type: "radio",
             title: "Do you accept Church's teaching on the Eucharist?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/a6271bcb-c6af-4ed1-a257-29befe470664.png?Expires=1634234400&Signature=M3f-nBTyVdCJ6Bv6TjR-sxMu3RdEsRGWw9yc-067eDer-xXaz5OcppvePMUkAzZTbhXE2zH-f~qVAx14Fk9~Z-RuwmslbfpVrMUdkPZgudLyVp3nkEWrDvUxHofsPKR7PZ8NI61mbUFLtVCTUfCepPwJbzU19KWWYWJC8H7a9BE_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/ELbvDxR",
         },
         {
             name: "contraception",
@@ -1623,6 +1612,9 @@ export default {
             answer: "Yes",
             input_type: "radio",
             title: "Do you accept Church teaching on Contraception?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/e8fbdbe1-bbc7-4242-ba2a-43306bed3fc8.png?Expires=1634234400&Signature=VXYChHol7fZL9M1Yv0xBaKnVzMtJqT-k22z6ZmIk4SMtO8DHmJUB7V-2ONyqM0raBTlt839fMdABmG~EKLyiTZdCzkpynp9qaMBy0gmgBEHzMoC~iFuUftDh~TZEkmFr1933EC0zc14eIexq-8elX7TrN4JOasaTFyUeOQEy6Wo_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/dlG7zdb",
         },
         {
             name: "abortion",
@@ -1654,6 +1646,9 @@ export default {
             answer: "Yes",
             input_type: "radio",
             title: "Do you accept Church teaching on the Sanctity of Life?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/28f2bb7e-48e5-4390-b896-1e2d69684295.png?Expires=1634234400&Signature=O8Ku2gYwO1XWjXFMhCYzVabe0SD6zP-z3VDD~1qpvSwKBaE76VlvElftdtPHaIqxwhbsu9BGFeiIX11oI6QDq5pPqNObqzLcTz8F4IOOKpp93eCmUBwoKKldPsuA-YZgJBf8ejxI62RT~M5cV712j-pdUsqTDmqL5FLWoMDLbTg_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/jg0JGeo",
         },
         {
             name: "papal_infallibility",
@@ -1685,6 +1680,9 @@ export default {
             answer: "Yes",
             input_type: "radio",
             title: "Do you accept Church teaching on Papal Infallibility?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/fb533477-e55f-4e5f-9b4e-8839fc7e4792.png?Expires=1634234400&Signature=kPAxfg-FUMq1wwQ-JTkmv~gA34gfUOBarsIdTn-ZTjYDe~5~FodAh5-0gdn~FTW2zzqw9Wn8iNiQPvKGW5SvzIZ0mF-WUVoVPVJIb6kjGl3Hjbymbxp0aeKMVauEegLBXLexVm62S8zknNwo5xt5lbHWy5fmv2sSFUAenfkdG0Y_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/zxp2wkb",
         },
         {
             name: "premarital_sex",
@@ -1716,6 +1714,10 @@ export default {
             answer: "Yes",
             input_type: "radio",
             title: "Do you accept Church teaching on Premarital Sex?",
+
+            screenshot:
+                "https://resources-live.sketch.cloud/files/16b5b8ba-c311-4711-810a-e16b4b9084e8.png",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/ZO078pp",
         },
         {
             name: "immaculate_conception",
@@ -1747,6 +1749,9 @@ export default {
             answer: "Yes",
             input_type: "radio",
             title: "Do you accept Church teaching on the Immaculate Conception?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/c2b98aaf-ce86-4d47-9533-839d9c6cca6f.png?Expires=1634234400&Signature=X2Eel83lbhzd9DpmnhTBgAFk5zSYioJXDaL0hv7Pm~IU-Sp-B0dplTMIc306F2ZlgrwIkZSJycH-Nd-xKiK4POVPmaq3ihVv3pb355JINXO9BVfCk4KIOyZloGVKBlZC~ZBc5JWd2~AdtkfyRCbvM3vXRXhyjBoq-LG3U5Tyebw_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/Jnbmkyr",
         },
         {
             name: "ordination_of_women",
@@ -1778,12 +1783,18 @@ export default {
             answer: "Yes",
             input_type: "radio",
             title: "Do you accept Church teaching on Holy Orders?",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/e67f3ae6-c70f-4506-8381-5517255947b1.png?Expires=1634234400&Signature=OaZDL9KHU0MqqTg3fVszm8lyyKEKSt8djIp-fvEHMN34g2uaAKOcM2Gb3CS-z~2VEMEUgarr~-oBjDJsb-v~w4kG0n2l~HAZjgrjUL~wN-Utd8huWTIWTPSdrfoscmF9doMu6r0jDH2INuCmbsJZ4ZUVXDkCA5UB3g7-uF5tKqg_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/v8qkprM",
         },
         {
             name: "bio",
             type: "input",
             requiredCount: 150,
             label: "Introduce yourself",
+            screenshot:
+                "https://resources-live.sketch.cloud/files/d6bf3641-8c30-4144-8e80-23a5505bdb19.png?Expires=1634234400&Signature=Uu--Dwk6S5Trb5mylT3t~6ZSW~KZcKaGKnmApGvRJcf2QTgj1kidhC3C1VA7NTM2jMAWJ077SQ7MiW6e~E7SFbWvZgrQhWQhC-v4SSW1MyR7-NIK1riWp-85GjwmbNfzsCXsLKY5YPmgP9BKWMZB4xSWqYkDPka7h6-QY~S93oo_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/4aG8Mkd",
         },
         {
             name: "interests",
@@ -1791,6 +1802,9 @@ export default {
             max: 40,
             label: "What are you favorite hobbies, interests, pastimes",
             skippable: true,
+            screenshot:
+                "https://resources-live.sketch.cloud/files/3a4954ad-2613-4f55-96fa-75f3dfecefba.png?Expires=1634234400&Signature=IbWlwk4YQMlz~vTbzYxZfVx1Tz6Or1Van7b63alhYILYo~wIXLkuK1EyTgGe~G2dbLgPRry8XSRULjy-ulTWLzWKuCkj8MQkmtTChkdB1XSSkrOcl9vl~kyyUhxGLltKU~N3hRNmz9qvO8mnJMJ~Q649kdIbZXZwphdp9OiBWAY_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA",
+            link: "https://www.sketch.com/s/b471e759-116b-45a6-b4a0-959ad24e5051/a/eKOWZzq",
         },
     ],
 }

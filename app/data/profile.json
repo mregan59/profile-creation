@@ -1,0 +1,260 @@
+{
+    "match": null,
+    "photos": [
+        {
+            "image_src_s1200": "https://d20vtoeqbf8y6m.cloudfront.net/q/qc/qciwwlwhhmhklqtzbioo.jpg",
+            "caption": "",
+            "image_src": "https://d2qy3gl1p8g68n.cloudfront.net/49x6:307x350/fit-in/900x1200/q/qc/qciwwlwhhmhklqtzbioo.jpg",
+            "image_src_s400": "https://d2qy3gl1p8g68n.cloudfront.net/49x6:307x350/300x400/q/qc/qciwwlwhhmhklqtzbioo.jpg"
+        },
+        {
+            "image_src_s1200": "https://d20vtoeqbf8y6m.cloudfront.net/a/aw/awortetjpnxaxkeysjxl.jpg",
+            "caption": "",
+            "image_src": "https://d20vtoeqbf8y6m.cloudfront.net/a/aw/awortetjpnxaxkeysjxl.jpg",
+            "image_src_s400": "https://d20vtoeqbf8y6m.cloudfront.net/a/aw/awortetjpnxaxkeysjxl-s400.jpg"
+        },
+        {
+            "image_src_s1200": "https://d20vtoeqbf8y6m.cloudfront.net/g/gr/grbxzbbhzawjwyjvjgfe-s1200.jpg",
+            "caption": "",
+            "image_src": "https://d20vtoeqbf8y6m.cloudfront.net/g/gr/grbxzbbhzawjwyjvjgfe.jpg",
+            "image_src_s400": "https://d20vtoeqbf8y6m.cloudfront.net/g/gr/grbxzbbhzawjwyjvjgfe-s400.jpg"
+        },
+        {
+            "image_src_s1200": "https://d20vtoeqbf8y6m.cloudfront.net/h/hi/hiviggdkeuwefykpvdtc-s1200.jpg",
+            "caption": "",
+            "image_src": "https://d20vtoeqbf8y6m.cloudfront.net/h/hi/hiviggdkeuwefykpvdtc.jpg",
+            "image_src_s400": "https://d20vtoeqbf8y6m.cloudfront.net/h/hi/hiviggdkeuwefykpvdtc-s400.jpg"
+        }
+    ],
+    "primary_answers": {
+        "age": 27,
+        "location": "Houston, TX",
+        "marital_status": "Never Married",
+        "height": "178 cm",
+        "drinking": "I drink Socially",
+        "smoking": "Regular smoker"
+    },
+    "secondary_answers": {
+        "fidelity": "Yes to All Faith Questions",
+        "employment_status": "Student",
+        "political_views": "Politically Very Conservative",
+        "education": "Completed Some college",
+        "occupation": "Student / Graduate Student"
+    },
+    "temperament": {
+        "name": "Sean",
+        "gender": "Male",
+        "occupation": "Student / Graduate Student",
+        "primary": "melancholic",
+        "secondary": "phlegmatic",
+        "primary_pct": 90,
+        "secondary_pct": 10,
+        "primary_color": "#aa7d51",
+        "secondary_color": "#498bcc",
+        "colors": {
+            "sanguine": "#ffc107",
+            "melancholic": "#aa7d51",
+            "choleric": "#f26059",
+            "phlegmatic": "#498bcc"
+        }
+    },
+    "favorite_things": {
+        "Shared Interests": [
+            "News",
+            "Chinese cuisine",
+            "Mexican cuisine",
+            "Making DIY Projects",
+            "History",
+            "Theology",
+            "Prayer",
+            "Praying the Rosary",
+            "Spending Time With Friends",
+            "Camping",
+            "Reading",
+            "Steak",
+            "Bacon",
+            "Blues",
+            "Eagles",
+            "Classical",
+            "Classic rock"
+        ],
+        "Activities": [
+            "Camping",
+            "Reading",
+            "Playing Games",
+            "Spending Time With Friends",
+            "Making DIY Projects",
+            "Studying History"
+        ],
+        "Faith": [
+            "Latin mass",
+            "Prayer",
+            "Hymns",
+            "Praying the Rosary",
+            "Saint George",
+            "Saint Joan of Arc",
+            "Saint Thomas Aquinas"
+        ],
+        "Foods": [
+            "Japanese cuisine",
+            "Home cooked cuisine",
+            "Chinese cuisine",
+            "American cuisine",
+            "Mexican cuisine",
+            "Steak",
+            "Thai cuisine",
+            "French Cuisine",
+            "Bacon",
+            "Barbecued foods"
+        ],
+        "Media": [
+            "Classic movies",
+            "News",
+            "Documentaries",
+            "Science fiction",
+            "Anime",
+            "Westerns"
+        ],
+        "Music": [
+            "Frank Sinatra",
+            "Classic rock",
+            "Eighties",
+            "Blues",
+            "Journey",
+            "Classical",
+            "Eagles",
+            "Rock",
+            "Country music",
+            "Styx",
+            "Fifties",
+            "Folk",
+            "Gordon Lightfoot",
+            "Johnny Cash",
+            "Dean Martin"
+        ],
+        "Reading": [
+            "Philosophy",
+            "History",
+            "Holy Bible",
+            "C. S. Lewis",
+            "J. R. R. Tolkien",
+            "Fantasy",
+            "Theology",
+            "Epictetus",
+            "Meditations - Marcus Aurelius",
+            "Hagakure - Yamamoto Tsunetomo"
+        ],
+        "Sports": [
+            "Bicycling",
+            "Walking",
+            "Martial Arts",
+            "Camping"
+        ],
+        "Travel": [
+            "Japan",
+            "Texas",
+            "Europe",
+            "Taiwan",
+            "Ukraine"
+        ]
+    },
+    "short_answers": [
+        {
+            "label": "Introduction",
+            "value": "Still setting up account and testing the site's features.\r\n\r\nOverall, I'm on the traditional side, and hope to find someone who shares my values.\r\n\r\nMy interests include music, classic cinema, politics/government, history, philosophy/theology, outdoors (camping/hunting), firearms/military, and DIY/automotive.\r\nI tend to enjoy technical hobbies. I maintain my own vehicle and can tackle most household repairs. In the DIY realm, I also volunteer at my Parish.\r\nDue to being busy, I've recently neglected weekly Mass attendance but hope to get back into regular attendance soon (I'll be finishing up my university studies within the month).",
+            "key": "sa_about_me"
+        },
+        {
+            "label": "Ideal Match",
+            "value": "My preferences in a woman would be to be Christian, chaste, of European descent, and whose plans for a future family include children.",
+            "key": "sa_ideal_match"
+        },
+        {
+            "label": "Faith",
+            "value": "I was raised a 'two-day-a-year' Catholic, typically only attending every now and then, as well as on Easter and Christmas. Due to this, apart from studying the Bible on my own, I never really learned much about the Church except the basics, and didn't maintain regular attendence. Regardless, my faith has been very important to me, and despite not being regularly in attendance, maintaining a Christian life has always been a priority.\r\nI had tried a few times to get into regular Mass attendence, but found that the Parishes I'd tried weren't very compelling to me. I was recommended a Latin Mass Parish and immediately was drawn to the symbolism and tradition, and I've been learning more about the faith and trying to keep regular attendance since.",
+            "key": "sa_faith"
+        },
+        {
+            "label": "Music",
+            "value": "Personally, I listen to just about anything, except rap. I grew up listening to Classic Rock and Country, and my favorite artist/group is probably a tie between Johnny Cash and the band Styx. The genres I mostly listen to are Folk, 40's-50's, Classic Rock, and older Country (50's-70's, mainly). I'm not well-versed in Classical, but I enjoy listening to it every now and then.",
+            "key": "sa_music"
+        }
+    ],
+    "multiple_choice": {
+        "Appearance": [
+            "Green Eyes",
+            "Brown Hair",
+            "Average Build",
+            "White / Caucasian",
+            "Never had tattoos",
+            "No piercings"
+        ],
+        "Faith": [
+            "Free to Marry",
+            "Attend Mass Monthly",
+            "Not Considering a Vocation",
+            "Cradle Catholic",
+            "Prefer Traditional Latin Mass",
+            "My Faith is part of my daily life"
+        ],
+        "Background": [
+            "No children",
+            "Dad and mom raised me",
+            "Often talk and do things together with family",
+            "The oldest child",
+            "Grew Up (Other)",
+            "Ideally want 3-5 children",
+            "Attended Public School"
+        ],
+        "Lifestyle": [
+            "Night owl",
+            "Don't regularly exercise, but active",
+            "Diet: Meat and potatoes",
+            "Don't eat out very often",
+            "A few hours a week of TV",
+            "A long distance relationship could work with the right person",
+            "Prefer to live Near family (either)"
+        ]
+    },
+    "church_teachings": {
+        "The Eucharist": true,
+        "Contraception": true,
+        "Sanctity of Life": true,
+        "Papal Infallibility": true,
+        "Premarital Sex": true,
+        "The Immaculate Conception": true,
+        "Holy Orders": true
+    },
+    "is_snoozed": 0,
+    "is_likeable": true,
+    "is_liked": false,
+    "show_user": {
+        "id": 1781912,
+        "primary_photo_id": 7630667,
+        "photo_count": 4,
+        "profile_status": "active",
+        "first_name": "Sean",
+        "gender": "Male",
+        "marital_status": "Never Married",
+        "free_to_marry": null,
+        "city": "Houston",
+        "state": "TX",
+        "country": "US",
+        "zip_code": null,
+        "region": "Harris County",
+        "latitude": "29.760427",
+        "longitude": "-95.369803",
+        "diocese": "Archdiocese of Galveston-Houston",
+        "forum_posts": 1,
+        "x_cb_name": "Sean-1781912",
+        "age": 27,
+        "location": "Houston, TX",
+        "subject_pronoun": "he",
+        "object_pronoun": "him",
+        "adjective_pronoun": "his",
+        "possessive_pronoun": "his"
+    },
+    "message_channel_flag": false,
+    "highlight": [],
+    "show_user_is_me": false
+}

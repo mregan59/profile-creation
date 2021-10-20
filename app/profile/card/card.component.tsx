@@ -1,122 +1,128 @@
-import React, { useEffect } from 'react'
-import { View, Image, TouchableWithoutFeedback, StyleSheet, Dimensions } from 'react-native'
-import { Layout, Text, Button } from '@ui-kitten/components'
-import { useStores } from '../../store'
-import { observer } from 'mobx-react-lite'
-import Reactotron from 'reactotron-react-native'
-import Animated, { Extrapolate, interpolate, useAnimatedStyle, useDerivedValue } from 'react-native-reanimated'
-import { dimensions } from '../../theme/variables'
-import { usePrevious } from '../../utils/hooks'
-const { width } = Dimensions.get("window")
+import React, { useState, useEffect } from 'react'
+import { View, ScrollView, Image } from 'react-native'
+import { Layout, Button, ViewPager, Avatar } from '@ui-kitten/components'
+import { FlexBox, Text, IconButton } from '../../components'
+import { LinearGradient } from 'expo-linear-gradient'
+import { SettingsIcon, ChevronBackIcon, MoreHorizontalIcon } from '../../assets/icons'
+import { getDeviceHeight, variables, spacing } from '../../theme/variables'
+import profile from '../../data/profile.json'
 
-const MemoizedImage = React.memo(({ photo }) => {
-    return <Image style={{ height: 200, width: 120 }} source={{ uri: photo }} />
-}, (prevProps, nextProps) => {
-    console.log('prevProps HERE')
-    console.log(prevProps)
-    console.log(nextProps)
-    if (prevProps.photo == nextProps.photo) {
-        return true
-    }
-    return false
-})
-
-export const SwipeableCard = observer(({ profile, onTop, translateX }) => {
-    const x = useDerivedValue(() => (translateX.value))
-    useEffect(() => {
-        //  Reactotron.log(profile)
-    }, [])
-    if (!profile) {
-        return null
-    }
-
-    const nope = useAnimatedStyle(() => ({
-        opacity: onTop ? interpolate(x.value, [-width / 4, 0], [1, 0]) : 0,
-    }))
-    const like = useAnimatedStyle(() => ({
-        opacity: onTop ? interpolate(x.value, [0, width / 4], [0, 1], Extrapolate.CLAMP) : 0,
-    }))
-
-    return (
-        <View style={{ height: 300, width: 250, backgroundColor: 'green', borderRadius: 10 }}>
-            <View style={styles.overlay}>
-                <View style={styles.header}>
-                    <Animated.View style={[styles.like, like]}>
-                        <Text style={styles.likeLabel}>LIKE</Text>
-                    </Animated.View>
-                    <Animated.View style={[styles.nope, nope]}>
-                        <Text style={styles.nopeLabel}>NOPE</Text>
-                    </Animated.View>
-                </View>
+export const Card = ({ indexHere, ...props }) => {
+    const themedStyle = props.eva.style
+    const height = getDeviceHeight()
+    const TopBar = () => {
+        return (
+            <View style={themedStyle.topBar}>
+                <LinearGradient
+                    // Background Linear Gradient
+                    colors={['rgba(0,0,0,.5)', 'rgba(0,0,0,.2)', 'transparent']}
+                >
+                    <FlexBox row aligncenter justifybetween style={themedStyle.topBarContainer}>
+                        <IconButton iconSize="giant" appearance="ghost" icon={ChevronBackIcon} ></IconButton>
+                        <IconButton appearance="ghost" icon={MoreHorizontalIcon} ></IconButton>
+                    </FlexBox>
+                </LinearGradient>
             </View>
-            <MemoizedImage photo={profile.photo} />
-            <Text>{profile.first_name}</Text>
-            <Text>{profile.location}</Text>
-            <Text>{profile.age}</Text>
-
-        </View>
-    )
-})
-export const Card = observer(({ profile }) => {
-    if (!profile) {
-        return null
+        )
     }
 
+    const BottomBar = () => {
+        return (
+            <View style={themedStyle.bottomBar}>
+                <LinearGradient
+                    // Background Linear Gradient
+                    colors={['rgba(0,0,0,0)', 'rgba(0, 0, 0, .5)', 'rgba(0, 0, 0, .9)']}
+                >
+                    <FlexBox row justifystart aligncenter style={themedStyle.bottomBarContainer}>
+                        <Avatar style={themedStyle.avatar} size='giant' source={{
+                            uri: profile.photos[0].image_src_s400,
+                        }}></Avatar>
+                        <View style={themedStyle.info}>
+                            <Text category="h5">{`${profile.show_user.first_name}, ${profile.show_user.age}`}</Text>
+                            <Text category='p1'>{profile.show_user.location}</Text>
+                        </View>
+                        <FlexBox style={themedStyle.buttonContainer} gutter={2} row>
+                            <IconButton status="danger" icon={SettingsIcon}></IconButton>
+                            <IconButton icon={SettingsIcon} ></IconButton>
+                        </FlexBox>
+                    </FlexBox>
+                </LinearGradient>
+            </View>
+        )
+    }
+    const BottomBarDark = () => {
+        return (
+            <View style={themedStyle.bottomBar}>
+
+                <LinearGradient
+                    // Background Linear Gradient
+                    colors={['rgba(255,255,255,0)', 'rgba(255,255,255,.8)', 'rgba(255,255,255,1)']}
+                >
+                    <View style={{ height: 70 }}></View>
+                </LinearGradient>
+                <FlexBox row justifystart aligncenter style={themedStyle.bottomBarContainer}>
+                    <Avatar style={themedStyle.avatar} size='giant' source={{
+                        uri: profile.photos[0].image_src_s400,
+                    }}></Avatar>
+                    <View style={themedStyle.info}>
+                        <Text category="h5" appearance="alternative">{`${profile.show_user.first_name}, ${profile.show_user.age}`}</Text>
+                        <Text category='p1' appearance="alternative">{profile.show_user.location}</Text>
+                    </View>
+                    <FlexBox style={themedStyle.buttonContainer} gutter={2} row>
+                        <IconButton status="danger" icon={SettingsIcon} ></IconButton>
+                        <IconButton icon={SettingsIcon} ></IconButton>
+                    </FlexBox>
+                </FlexBox >
+
+            </View>
+        )
+    }
+
+    const cards = [
+        (<Layout level="1" style={{ ...themedStyle.card, height }}>
+            <Image style={themedStyle.image} source={{
+                uri: profile.photos[0].image_src_s400,
+            }}></Image>
+            <TopBar></TopBar>
+            <BottomBar></BottomBar>
+        </Layout>),
+
+        ...profile.short_answers.map(shortAnswer => <Layout level="1" style={{ ...themedStyle.otherCard, marginTop: 3 }}>
+            {/* <ScrollView style={{ height: '100%' }}> */}
+            <FlexBox justifycenter style={themedStyle.shortAnswerContainer}>
+                <Text style={themedStyle.label} category="label" appearance='alternative'>{shortAnswer.label}</Text>
+                <Text style={themedStyle.content} category="h5" appearance='alternative'>{shortAnswer.value}</Text>
+            </FlexBox>
+            {/* </ScrollView> */}
+
+        </Layout >)
+
+    ]
+
+    return cards[indexHere]
     return (
-        <View style={{ height: 300, width: 250, backgroundColor: 'green', borderRadius: 10 }}>
+        <View>
+            <Layout level="1" style={themedStyle.card}>
+                <ScrollView showsVerticalScrollIndicator={false}>
+                    <FlexBox justifycenter style={themedStyle.shortAnswerContainer}>
+                        <Text style={themedStyle.label} category="label" appearance='alternative'>{profile.short_answers[0].label}</Text>
+                        <Text style={themedStyle.content} category="h5" appearance='alternative'>{profile.short_answers[0].value}</Text>
+                    </FlexBox>
+                </ScrollView>
+                <TopBar></TopBar>
+                <BottomBarDark></BottomBarDark>
 
-            <Image style={{ height: 200, width: 120 }} source={{ uri: profile.photo }} />
-            <Text>{profile.first_name}</Text>
-            <Text>{profile.location}</Text>
-            <Text>{profile.age}</Text>
-
+            </Layout>
         </View>
-    )
-})
 
-const styles = StyleSheet.create({
-    footer: {
-        flexDirection: "row",
-    },
-    header: {
-        flexDirection: "row",
-        justifyContent: "space-between",
-    },
-    image: {
-        ...StyleSheet.absoluteFillObject,
-        borderRadius: 8,
-        height: undefined,
-        width: undefined,
-    },
-    like: {
-        borderColor: "#6ee3b4",
-        borderRadius: 5,
-        borderWidth: 4,
-        padding: 8,
-    },
-    likeLabel: {
-        color: "#6ee3b4",
-        fontSize: 32,
-        fontWeight: "bold",
-    },
-    name: {
-        color: "white",
-        fontSize: 32,
-    },
-    nope: {
-        borderColor: "#ec5288",
-        borderRadius: 5,
-        borderWidth: 4,
-        padding: 8,
-    },
-    nopeLabel: {
-        color: "#ec5288",
-        fontSize: 32,
-        fontWeight: "bold",
-    },
-    overlay: {
-        flex: 1,
-        justifyContent: "space-between",
-        padding: 16,
-    },
-})
+    )
+    return (
+        <Layout level="1" style={themedStyle.card}>
+            <Image style={themedStyle.image} source={{
+                uri: profile.photos[0].image_src_s400,
+            }}></Image>
+            <TopBar></TopBar>
+            <BottomBar></BottomBar>
+        </Layout>
+    )
+}

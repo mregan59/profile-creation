@@ -73,7 +73,9 @@ export const FlexBox = props => {
                 if (isLast) {
                     return child
                 }
-                return <View style={wrap ? { marginRight: spacing(gutter), marginBottom: spacing(gutter), maxWidth: '100%' } : { [prop]: spacing(gutter) }}>{child}</View>
+                if (child) {
+                    return <View style={wrap ? { marginRight: spacing(gutter), marginBottom: spacing(gutter), maxWidth: '100%' } : { [prop]: spacing(gutter) }}>{child}</View>
+                }
             })}
         </View>
     }

@@ -1,6 +1,7 @@
 import { Instance, SnapshotOut, types } from "mobx-state-tree"
 import { withEnvironment } from "../extensions/with-environment"
 import { AppList } from "../app"
+import { ProfileList } from "../profile"
 import Reactotron from "reactotron-react-native"
 /**
  * A RootStore model.
@@ -8,6 +9,7 @@ import Reactotron from "reactotron-react-native"
 // prettier-ignore
 export const RootStoreModel = types.model("RootStore").props({
   appList: types.optional(AppList, {} as any),
+  profileList: types.optional(ProfileList, {} as any),
 
 })
   .extend(withEnvironment)
@@ -15,6 +17,7 @@ export const RootStoreModel = types.model("RootStore").props({
       getApps: () => {
         const apps = self.environment.api.getApps()
         self.appList.saveApps(apps)
+        self.profileList.saveProfiles()
       }
   }))
 

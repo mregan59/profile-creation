@@ -17,6 +17,7 @@ import { SafeAreaProvider, initialWindowMetrics } from "react-native-safe-area-c
 import { initFonts } from "./theme/fonts" // expo
 import * as storage from "./utils/storage"
 import * as eva from '@eva-design/eva'
+import 'react-native-get-random-values'
 import {
     useBackButtonHandler,
     RootNavigator,
@@ -88,7 +89,7 @@ function App() {
     return (
         <RootStoreProvider value={rootStore}>
             <IconRegistry icons={EvaIconsPack} />
-            <ApplicationProvider {...eva} theme={eva.dark} customMapping={customMapping}>
+            <ApplicationProvider {...eva} theme={eva.light} customMapping={customMapping}>
                 <SafeAreaProvider initialMetrics={initialWindowMetrics}>
                     <RootNavigator
                         ref={navigationRef}
